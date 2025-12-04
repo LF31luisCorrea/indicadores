@@ -49,7 +49,7 @@ const gerarPDF = () => {
 
     // Título do projeto
     doc.setFontSize(12);
-    doc.setFont(undefined, "bold");
+    doc.setFont("times", "bold");
 
     // Ajuste de texto longo
     const titleLines = doc.splitTextToSize(proj["Título"] || "Projeto sem nome", rightMargin - leftMargin);
@@ -58,7 +58,7 @@ const gerarPDF = () => {
     y += titleLines.length * 6; // sobe verticalmente dependendo das linhas do título
 
     // Data embaixo, alinhada à direita
-    doc.setFont(undefined, "normal");
+    doc.setFont("times", "normal");
     doc.text(proj.dataColeta.toLocaleDateString(), rightMargin, y, { align: "right" });
 
     y += 8;
