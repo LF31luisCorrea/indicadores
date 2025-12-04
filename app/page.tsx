@@ -3,22 +3,23 @@
 import { useRouter } from "next/navigation";
 import * as XLSX from "xlsx";
 
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
-import styles from '../styles/Global.module.css';
-import Image from 'next/image';
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import styles from "../styles/Global.module.css";
+import Image from "next/image";
+import React from "react";
 
 export default function Home() {
   const router = useRouter();
 
-  function handleFile(e) {
-    const arquivo = e.target.files[0];
+  function handleFile(e: React.ChangeEvent<HTMLInputElement>) {
+    const arquivo = e.target.files?.[0];
     if (!arquivo) return;
 
     const reader = new FileReader();
 
     reader.onload = (evt) => {
-      const data = new Uint8Array(evt.target.result);
+      const data = new Uint8Array(evt.target?.result as ArrayBuffer);
 
       // Lê a planilha
       const workbook = XLSX.read(data, { type: "array" });
@@ -69,7 +70,7 @@ export default function Home() {
         {/* botão visível */}
         <button
           className={styles.botao}
-          onClick={() => document.getElementById("arquivo").click()}
+          onClick={() => document.getElementById("arquivo")?.click()}
         >
           Upload do Arquivo
         </button>
