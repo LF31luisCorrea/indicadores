@@ -1,0 +1,67 @@
+.home {
+  position: relative;
+  min-height: 70vh;
+  background: none;
+  z-index: 1;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/verde.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; 
+  z-index: -1;
+}
+
+.h1{
+    color: #135F03;
+    font-size:x-large;
+    margin-top: 6%;
+      font-family:'Times New Roman', Times, serif;
+      text-align: center;
+}
+
+.logo{
+    height: 25vh;
+    width: 40vh;
+    margin-left: 40%;
+    margin-top: 2%;
+}
+
+.h11{
+    color: #135F03;
+    font-size:x-large;
+      text-align: center;
+    margin-top: 2%;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.h111{
+    color: #135F03;
+    font-size:x-large;
+      text-align: center;
+    margin-top: 0.5%;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.botao {
+  background-color: black;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.2s;
+  margin-top: 1.5%;
+  margin-left: 43%;
+}
+
+.botao:hover {
+  background-color: #032900;
+}
+

@@ -1,0 +1,12 @@
+.nav{
+    background-color: #032900;
+    min-height: 20vh;
+
+}
+
+.logo{
+    height: 10vh;
+    width: 27vh;
+    margin-left: 3%;
+    margin-top: 2%;
+}

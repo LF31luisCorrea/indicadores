@@ -1,0 +1,92 @@
+.home {
+  position: relative;
+  min-height: 70vh;
+  background: none;
+  z-index: 1;
+  padding-bottom: 40px;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/verde.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Container das coletas */
+.div1 {
+  width: 60%;
+  margin: 0 auto 20px auto;
+  background-color: #032900;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: left;
+}
+
+/* Lista de coletas */
+.div1 ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.div1 li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.label {
+  margin-left: 3%;
+  font-weight: 600;
+}
+
+.valor {
+  font-weight: 700;
+}
+
+/* Linha separadora */
+.linha {
+  width: 100%;
+  border: 0;
+  border-top: 2px solid #ffffff55;
+  margin: 8px 0;
+}
+
+/* Botão voltar */
+.button {
+  background-color: #032900;
+  color: #7CFF8A;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #7CFF8A;;
+  color: #032900;
+}
+
+/* Mensagem quando não há coletas */
+.noColetas {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  padding: 20px 0;
+}

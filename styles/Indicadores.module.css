@@ -1,0 +1,158 @@
+.home {
+  position: relative;
+  min-height: 560vh;
+  background: none;
+  z-index: 1;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/verde1.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+  margin-left: 41%;
+}
+
+.div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11 {
+  width: 60%;
+  margin-left: 20%;
+  text-align: left; /* texto à esquerda */
+  background-color: #032900;
+  color: white;
+  border-radius: 80px;
+  margin-top: 1%;
+  padding: 20px;
+}
+
+.home h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.home p,
+.home li {
+  font-size: 18px;
+  color: #f0f0f0;
+  line-height: 1.6;
+  display: flex;
+  justify-content: space-between; /* texto esquerda, valor direita */
+  align-items: center;
+  margin-right: 5%;
+}
+
+.home b, .valor {
+  color: white;
+  font-weight: 700;
+}
+
+.home ul {
+  list-style: none;
+  padding-left: 0;
+}
+.linha {
+  width: calc(100% - 40px); /* 100% menos o padding da div (20px de cada lado) */
+  border: 0;
+  border-top: 2px solid #ffffff55; /* aumentei de 1px para 2px */
+  margin: 8px 0; /* espaço acima e abaixo */
+  align-self: stretch; /* garante que a linha siga o flex container */
+  margin-left: 2%;
+}
+
+.label{
+    margin-left: 3%;
+}
+
+.notificacoesContainer {
+  width: 60%;
+  background-color: #032900;
+  color: white;
+  border-radius: 20px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.notificacoesContainer h2 {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.notificacoesContainer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.notificacoesContainer li {
+  padding: 4px 0;
+  border-bottom: 1px solid #ffffff33;
+}
+
+.bellIcon {
+  cursor: pointer;
+  font-size: 24px;
+  position: relative;
+  display: inline-block;
+  margin-right: 100px;
+}
+
+.bellBadge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: max-content;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 125%; /* acima do ícone */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.bellIcon:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.button{
+ background-color: black;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.2s;
+  margin-top: 1.5%;
+  margin-left: 45%;
+}

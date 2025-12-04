@@ -1,0 +1,14 @@
+.footer {
+  background-color: #032900;
+  min-height: 15vh;
+  width: 100%;
+}
+
+.footer h1 {
+  color: white;
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 2%;
+  padding-top: 5%; /* abaixa o conteúdo sem mover o footer */
+
+}
